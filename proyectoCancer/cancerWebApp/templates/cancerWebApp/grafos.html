@@ -1,0 +1,47 @@
+{% extends 'cancerWebApp/inicio.html' %}
+
+{% block contenido %}
+    <h1>Reconocimiento basado en grafos</h1>
+    <!--<h1>{{datos}}</h1>-->
+    
+    <!--{% for i in miMensaje %}
+        <ul>
+            <li>{{i}}</li> for para la lista de ejemplo
+        </ul>
+    {% endfor %}-->
+
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col"> numero de parte  </th>
+            <th scope="col">  temperatura  </th>
+            <th scope="col">  color  </th>
+            <th scope="col">  inflamacion  </th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for i in datos %}
+			<tr>
+				<th>{{i.parteP}}</th>
+				<th>{{i.temp}}</th>
+				<th>{{i.color}}</th>
+				<th>{{i.inflamacion}}</th>
+			</tr>
+            {% endfor %}
+        </tbody>
+      </table>    
+
+        <!--{% for i in datos %}
+            <ul>
+                <li>{{i.parteP}}</li>
+                <li>{{i.temp}}</li>
+                <li>{{i.color}}</li>
+                <li>{{i.inflamacion}}</li>
+            </ul>
+        {% endfor %}-->
+
+    {% endblock %}
+
+{% block title %}
+    Grafos
+{% endblock %}

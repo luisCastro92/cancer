@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimeinto de Patrones Sintactico Estructural{%block title%}{%endblock%}</title>
+    <!-- boostrap 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style= "background-color: darkgrey;">
+    <center>
+        <h1>Universdad Autonoma del Estado de Mexico</h1>
+        <h1>Centro Universitario Nezahualcoyotl</h1>
+        <h2>Reconocimeinto de Patrones Sintactico Estructural</h2>
+    </center>    
+<!--
+    inicio navbar
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="{% url 'inicio' %}">inicio<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="{% url 'grafos' %}"> <li>Reconocimeinto basado en grafos</li> </a>
+          <a class="nav-item nav-link" href="{% url 'gramaticas' %}"> <li>Reconocimeinto basado en gramaticas</li> </a> 
+        </div>
+    </div>
+  </nav>
+
+    <ul>
+    </ul>
+
+    {% block contenido %}
+        <h1 class="">Inicio</h1>
+    {% endblock %}
+    
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
+
+    <!-- Footer Text -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">proyecto</h5>
+          <p>este proyecto es realizado por alumnos de la clase de reconocimeinto de patrones
+             con el objetivo de realizar el trabajo de reconociemiento mediante una aplicacion web.
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mb-md-0 mb-3">
+  
+          <!-- Content -->
+          <h5 class="text-uppercase font-weight-bold">a cerca de:</h5>
+          <p>se llevara a cabo el procesamiento de una base de datos que contiene la Informacion
+             sobre el cancer de mama, hasta este punto se trata de una tabla que muestra los datos, todo se gestionan con
+             postgreSQL, Django y Python.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Text -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://www.uaemex.mx/">ISI CU UAEM Nezahualcoyotl</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
